@@ -46,7 +46,7 @@ public class Main {
     @RequestMapping("/getItemById")
     public Item getItemById(@RequestHeader String id){
         initCon();
-        var test = getById(id);
+        Item test = getById(id);
         if(test != null){
             System.out.println(test.getItemId() +'\n'+ test.getItemName() +'\n'+ test.getItemCount());
         }
